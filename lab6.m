@@ -14,17 +14,17 @@ A = [ 2 -14 5
   %x2
   X3;
   
-  fprintf('a: %f, b: %f, c: %f',X1(1),X1(2),X1(3))
-  fprintf('b is %f',X1(2))
+  fprintf('a: %f, b: %f, c: %f \n',X1(1),X1(2),X1(3))
+  fprintf('b is %f \n',X1(2))
   
-  fprintf('a: %f, b: %f, c: %f',X3(1),X3(2),X3(3))
-  fprintf('b is %f',X3(2))
+  fprintf('a: %f, b: %f, c: %f \n',X3(1),X3(2),X3(3))
+  fprintf('b is %f \n',X3(2))
   
   %part2
   
   result = findAllX(0);
   
-  fprintf('x1: %f   x2: %f   x3: %f',result(1),result(2),result(3))
+  fprintf('x1: %f   x2: %f   x3: %f \n',result(1),result(2),result(3))
 
   Y12 = zeros(1,1);
   for i = 1:12
@@ -54,4 +54,5 @@ A = [ 2 -14 5
   
   min = fminbnd(res,0,12);
   g = @(Y)res;
+  
   
